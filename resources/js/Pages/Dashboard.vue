@@ -9,7 +9,7 @@
 <template>
     <Head title="Painel de Controle"/>
     <AuthenticateLayout>
-        <div class="flex max-w-full min-h-screen flex-col pb-5 pr-2">
+        <div class="flex max-w-full min-h-full flex-col pb-5 md:pr-2">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3">
                 <div class="col-span-1 flex h-28 bg-gradient-to-r from-cyan-600 to-blue-400 rounded-md">
                     <div class="flex px-3 text-slate-300 bg-cyan-700 rounded-tl-md rounded-bl-md items-center justify-center">
