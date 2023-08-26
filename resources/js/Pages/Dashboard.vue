@@ -5,6 +5,7 @@
     import DoughnutChart from '@/Components/graficos/DoughnutChart.vue';
     import LineChart from '@/Components/graficos/LineChart.vue';
    
+   
 </script>
 <template>
     <Head title="Painel de Controle"/>
@@ -57,6 +58,8 @@
                 </div>
             </div>
         </div>
+
+        <Modal/>
     </AuthenticateLayout>
 </template>
 
