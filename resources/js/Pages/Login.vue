@@ -13,7 +13,7 @@
         <div class="bg-cyan-600 hidden md:flex w-[60%]">
             .....
         </div>
-        <div class="flex-1 flex justify-center items-center px-5">
+        <div class="flex-1 flex justify-center bg-white items-center px-5">
             <form @submit.prevent="form.post('/login')" class="flex flex-col w-full">
                 <label>Login</label>
                 <input required v-model="form.email" class="rounded-md outline-none border-2 border-gray-300 px-2 py-2" type="email">

@@ -95,7 +95,7 @@
             </div>
            
 
-            <div class="w-full h-full min-h-screen p-4">
+            <div class="w-full h-full p-4">
                 <slot/>
             </div>
         </div>
