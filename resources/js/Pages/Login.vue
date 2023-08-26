@@ -21,11 +21,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
                 </svg>
             </div>
-            <div class="w-full text-center">
+            <div class="w-full text-center mb-10">
                 <h1 class="font-bold text-3xl">Sistema de Cadastro de Manutenção</h1>
                 <span>Entre com as suas credenciais</span>
             </div>
-            <form @submit.prevent="form.post('/login')" class="flex mt-10 flex-col w-full">
+            <form @submit.prevent="form.post('/login')" class="flex flex-col w-full">
                 <label>Login</label>
                 <input required v-model="form.email" class="rounded-md outline-none border-2 border-gray-300 px-2 py-2" type="email">
                 <div class="text-red-500" v-if="form.errors.email">{{ form.errors.email }}</div>
