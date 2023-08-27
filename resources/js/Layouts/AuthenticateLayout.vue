@@ -3,7 +3,8 @@
     import { Link } from '@inertiajs/vue3';
     import { computed } from 'vue';
     import { usePage } from '@inertiajs/vue3';
-    import Modal from '../Components/Modal.vue';
+    import ModalConfirm from '../Components/ModalConfirm.vue';
+    
     
 
     const page = usePage();
@@ -11,6 +12,7 @@
     const dropdown = ref(false);
     const user = computed(() => page.props.auth.user);
     const showModal = ref(false);
+    
 
 
 </script>
@@ -58,7 +60,7 @@
                     </nav>
                 </div>
                 <div class="w-full h-16">
-                    <button id="show-modal" @click="showModal = true" class="md:flex w-full h-full hidden items-center justify-center bg-slate-800">
+                    <button  @click="showModal = true" class="md:flex w-full h-full hidden items-center justify-center bg-slate-800">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                         </svg>
@@ -100,7 +102,20 @@
             </div>
         </div>
 
-        <Modal :show="showModal" @close="showModal = false"/>
+        <ModalConfirm :show="showModal">
+            <div class="h-full w-full flex flex-col">
+                <div class="flex items-center h-8 justify-center">
+                   
+                </div>
+               <div class="flex-1 flex items-center justify-start px-8">
+                    Deseja realmente sair do sistema?
+               </div>
+               <div class="flex h-10 justify-end items-center p-3">
+                    <button class="bg-slate-500 w-16 text-white mr-4 text-center rounded" @click="showModal = false">Fechar</button>
+                    <Link href="/dashboard/logout" class="bg-cyan-500 w-16 text-center rounded">Ok</Link>
+               </div>
+            </div>
+        </ModalConfirm>
     </div>
 </template>
 
