@@ -21,13 +21,16 @@
 
         <div :class="{'translate-x-0': sidebar}" class="w-64 h-screen bg-slate-600 fixed md:fixed z-40 transform transition duration-200 ease-in-out -translate-x-full md:-translate-x-0 text-gray-100">
             <div class="flex flex-col h-full w-full">
-                <div class="flex items-center justify-center bg-slate-700 py-2 px-2">
+                <div class="flex items-center  bg-slate-700 py-2 px-2">
                     <div class="w-10 mr-2 h-12 rounded-full flex items-center justify-center text-slate-200">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                         </svg>
                     </div>
-                    <span>{{user.name}}</span>
+                    <div class="flex flex-col">
+                        <h1 class="font-bold">PERFIL</h1>
+                        <span>{{user.profile}}</span>
+                    </div>
                 </div>
                 <div class="flex flex-1">
                     <nav class="overflow-h-auto w-full">
