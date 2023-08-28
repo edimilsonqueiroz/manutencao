@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="flex flex-1 md:ml-64 flex-col h-screen">
+        <div class="flex flex-1 md:ml-64 flex-col h-full w-full">
             <header class="shadow flex items-center  bg-gray-50  justify-between px-2 py-3">
                 <button @click="sidebar = true">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
