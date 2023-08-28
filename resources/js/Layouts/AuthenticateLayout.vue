@@ -111,7 +111,7 @@
                     Deseja realmente sair do sistema?
                </div>
                <div class="flex h-10 justify-end items-center p-3">
-                    <button class="bg-slate-500 w-16 text-white mr-4 text-center rounded" @click="showModal = false">Fechar</button>
+                    <button class="bg-slate-500 w-16 text-white mr-2 text-center rounded" @click="showModal = false">Fechar</button>
                     <Link href="/dashboard/logout" class="bg-cyan-500 w-16 text-center rounded">Ok</Link>
                </div>
             </div>
