@@ -22,7 +22,7 @@
                 </svg>
             </div>
             <div class="w-full text-center mb-10">
-                <h1 class="font-bold text-3xl">Sistema de Cadastro de Manutenção</h1>
+                <h1 class="font-bold text-3xl">Sistema de Gestão de Patrimônio</h1>
                 <span>Entre com as suas credenciais</span>
             </div>
             <form @submit.prevent="form.post('/login')" class="flex flex-col w-full">
